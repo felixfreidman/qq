@@ -1,3 +1,145 @@
 html {
     scroll-behavior: smooth;
+    font-family: "Geometria";
+}
+
+body {
+    position: relative;
+    background-color: #fff;
+    cursor: default;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+// Header Section
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 39px;
+    padding: 23px 0;
+    width: 73%;
+    max-width: 1410px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__logo-container {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        .logo {
+            height: 40px;
+            width: 35px;
+            margin-right: 24px;
+        }
+        .logo-caption {
+            color: #fff;
+            font-size: 24px;
+        }
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        height: 32px;
+        margin-right: 32px;
+        border-right: #414141 1px solid;
+        .navigation-link {
+            font-size: 16px;
+            margin-right: 32px;
+            color: #8e8e8e;
+            transition: all 0.3s ease;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    &__contacts {
+        margin-right: 32px;
+        a {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+    &__apply {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// Main Section
+.main {
+    width: 100vw;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+.section {
+    width: 100%;
+    &--greeting {
+        background: url("./assets/images/content/main.png") center;
+        max-height: 780px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        .greeting-container {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            max-width: 671px;
+            margin-left: 255px;
+        }
+        .greeting-header {
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 65px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        .greeting-subheader {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #c5c5c5;
+            margin-bottom: 48px;
+        }
+    }
+}
+
+// Apply Button Template
+.apply-btn {
+    padding: 13px 20px 11px;
+    border-radius: 4px;
+    background: #007bfc;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+    &--greeting {
+        max-width: 276px;
+        font-size: 14px;
+        padding: 18px 40px;
+        line-height: 18px;
+        border-radius: 8px;
+    }
 }

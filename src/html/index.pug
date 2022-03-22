@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Кукушка: тестовое задание
+        link(rel="shortcut icon", href="./assets/images/content/main_logo.svg", type="image/x-icon")
+        link(rel="stylesheet", href="./style.min.css")
+    body 
+        header.header 
+            .header__logo-container
+                a(href="#toMain") 
+                    img.logo#toMain(src="./assets/images/content/main_logo.svg", alt="Company Logo")
+                span.logo-caption Кукушка
+            .header__navigation
+                a.navigation-link(href="#toGreeting") О системе
+                a.navigation-link(href="#toBenefits") Как работает
+                a.navigation-link(href="#toProcess") Возможности
+                a.navigation-link(href="toFooter") Помощь
+            .header__contacts 
+                a(href="tel:+74951864203") +7 (495) 186-42-03 
+            .header__apply 
+                .apply-btn#headerApply  Оставить заявку
+        main.main 
+            .section.section--greeting
+                .greeting-container 
+                    .greeting-header Cистема удаленного контроля объектов
+                    .greeting-subheader ERP-система для автоматизации контроля объектов и автоматического расчета зарплаты сотрудников
+                    .apply-btn.apply-btn--greeting ПОЛУЧИТЬ ДЕМО-ДОСТУП
+            .section.section--benefits
+                .section-header 
+                .section-container 
+                    .image-pagination 
+                        .image-toggler.image-toggler--active#image--toggle1
+                            .image-toggler__container
+                                .image-header Все в одном месте
+                                .image-content Кукушка собирает данные о всех объектах, постах и сотрудниках 24/7
+                            .image-toggler__icon    
+                                img.image-icon(src="./assets/images/content/main_arrow.png")
+                        .image-toggler#image--toggle1
+                            .image-toggler__container
+                                .image-header Экономит до 22% с зарплаты сотрудника
+                                .image-content Кукушка вычитает время опозданий, прогулов и сумму штрафов из зарплаты сотрудников
+                            .image-toggler__icon    
+                                img.image-icon(src="./assets/images/content/main_coins.png")
+                        .image-toggler#image--toggle1
+                            .image-toggler__container
+                                .image-header Повышает качество контроля объектов
+                                .image-content За счет системы постоянного мониторинга, прогнозирования состояния объектов, награждения лучших сотрудников
+                            .image-toggler__icon    
+                                img.image-icon(src="./assets/images/content/main_loopa.png")
+                    .image-presentation 
+                        .image--toggle1 
+                            img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
+                        .image--toggle2 
+                            img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
+                        .image--toggle3
+                            img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
+            .section.section--process
+        footer.footer
