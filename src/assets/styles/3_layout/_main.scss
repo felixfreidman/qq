@@ -43,6 +43,11 @@ a {
     .navigation {
         border: none;
     }
+    .mobile-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .footer-row {
@@ -50,7 +55,7 @@ a {
     max-width: 1410px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     &--expanded {
         padding-bottom: 47px;
         border-bottom: #3f3f3f 1px solid;
@@ -158,6 +163,11 @@ a {
         display: flex;
         align-items: center;
         justify-content: start;
+        .mobile-image {
+            width: 100vw;
+            height: 324px;
+            display: none;
+        }
         .greeting-container {
             display: flex;
             flex-direction: column;

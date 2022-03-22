@@ -28,6 +28,8 @@ html(lang="en")
                     .greeting-header Cистема удаленного контроля объектов
                     .greeting-subheader ERP-система для автоматизации контроля объектов и автоматического расчета зарплаты сотрудников
                     .apply-btn.apply-btn--demo ПОЛУЧИТЬ ДЕМО-ДОСТУП
+                .mobile-image 
+                    img(src="./assets/images/content/main.png", alt="")
             .section#toBenefits.section--benefits
                 .section-header Выгода от внедрения
                 .section-container 
@@ -63,15 +65,17 @@ html(lang="en")
                     a(href="#toMain") 
                         img.logo#toMain(src="./assets/images/content/main_logo.svg", alt="Company Logo")
                     span.logo-caption Кукушка
-                .navigation
-                    a.navigation-link(href="#toGreeting") О системе
-                    a.navigation-link(href="#toBenefits") Как работает
-                    a.navigation-link(href="") Возможности
-                    a.navigation-link(href="toFooter") Помощь
-                .contacts 
-                    a(href="tel:+74951864203") +7 (495) 186-42-03 
-                .apply 
-                    .apply-btn.apply-btn--footer ПОЛУЧИТЬ ДЕМО-ДОСТУП
+                .mobile-container.mobile-container--second-to-column
+                    .navigation
+                        a.navigation-link(href="#toGreeting") О системе
+                        a.navigation-link(href="#toBenefits") Как работает
+                        a.navigation-link(href="") Возможности
+                        a.navigation-link(href="toFooter") Помощь
+                    .mobile-container.mobile-container--first-to-column
+                        .contacts 
+                            a(href="tel:+74951864203") +7 (495) 186-42-03 
+                        .apply 
+                            .apply-btn.apply-btn--footer ПОЛУЧИТЬ ДЕМО-ДОСТУП
             .footer-row 
                 .company-info
                     span.company-name ©2019–2021 Кукушка
