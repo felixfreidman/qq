@@ -353,25 +353,6 @@ a {
             }
         }
     }
-    .form-button {
-        background-color: #007bfc;
-        margin-top: 8px;
-        padding: 18px 20px;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: calc(100%);
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 18px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #fff;
-        border: none;
-        outline: none;
-        margin-bottom: 12px;
-    }
     .form-caption {
         font-weight: 400;
         font-size: 11px;
@@ -429,6 +410,7 @@ a {
         line-height: 35px;
         text-align: center;
         color: #000000;
+        margin-bottom: 13px;
     }
     .applied-subheader {
         font-weight: 400;
@@ -442,6 +424,45 @@ a {
             color: #007bfc;
             font-weight: 700;
         }
+    }
+}
+
+.form-button {
+    background-color: #007bfc;
+    margin-top: 8px;
+    padding: 18px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100%);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+    &--form {
+        padding: 18px 40px;
+        width: auto;
+        border-radius: 8px;
+        background: #007bfc;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-family: "Geometria";
+        font-style: normal;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        line-height: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
     }
 }
 
