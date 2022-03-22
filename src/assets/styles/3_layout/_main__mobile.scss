@@ -2,11 +2,27 @@
     .header {
         width: 80%;
     }
+    .footer {
+        padding: 59px 150px 24px;
+        width: calc(100% - 300px);
+    }
     .section {
         &--greeting {
             justify-content: start;
             .greeting-container {
                 margin-left: 150px;
+            }
+        }
+        &--benefits {
+            display: flex;
+            flex-direction: column;
+            padding: 80px 217px 80px 150px;
+            .image-presentation {
+                max-width: calc(100% - 650px);
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }

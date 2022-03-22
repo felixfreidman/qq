@@ -9,27 +9,27 @@ html(lang="en")
         link(rel="stylesheet", href="./style.min.css")
     body 
         header.header 
-            .header__logo-container
+            .logo-container
                 a(href="#toMain") 
                     img.logo#toMain(src="./assets/images/content/main_logo.svg", alt="Company Logo")
                 span.logo-caption Кукушка
-            .header__navigation
+            .navigation
                 a.navigation-link(href="#toGreeting") О системе
                 a.navigation-link(href="#toBenefits") Как работает
-                a.navigation-link(href="#toProcess") Возможности
+                a.navigation-link(href="") Возможности
                 a.navigation-link(href="toFooter") Помощь
-            .header__contacts 
+            .contacts 
                 a(href="tel:+74951864203") +7 (495) 186-42-03 
-            .header__apply 
+            .apply 
                 .apply-btn#headerApply  Оставить заявку
         main.main 
-            .section.section--greeting
+            .section#toGreeting.section--greeting
                 .greeting-container 
                     .greeting-header Cистема удаленного контроля объектов
                     .greeting-subheader ERP-система для автоматизации контроля объектов и автоматического расчета зарплаты сотрудников
-                    .apply-btn.apply-btn--greeting ПОЛУЧИТЬ ДЕМО-ДОСТУП
-            .section.section--benefits
-                .section-header 
+                    .apply-btn.apply-btn--demo ПОЛУЧИТЬ ДЕМО-ДОСТУП
+            .section#toBenefits.section--benefits
+                .section-header Выгода от внедрения
                 .section-container 
                     .image-pagination 
                         .image-toggler.image-toggler--active#image--toggle1
@@ -51,11 +51,29 @@ html(lang="en")
                             .image-toggler__icon    
                                 img.image-icon(src="./assets/images/content/main_loopa.png")
                     .image-presentation 
-                        .image--toggle1 
+                        .image--toggle1.image-toggle--show 
                             img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
-                        .image--toggle2 
+                        .image--toggle2.image-toggle--hidden 
                             img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
-                        .image--toggle3
+                        .image--toggle3.image-toggle--hidden
                             img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
-            .section.section--process
-        footer.footer
+        footer.footer#toFooter 
+            .footer-row.footer-row--expanded 
+                .logo-container
+                    a(href="#toMain") 
+                        img.logo#toMain(src="./assets/images/content/main_logo.svg", alt="Company Logo")
+                    span.logo-caption Кукушка
+                .navigation
+                    a.navigation-link(href="#toGreeting") О системе
+                    a.navigation-link(href="#toBenefits") Как работает
+                    a.navigation-link(href="") Возможности
+                    a.navigation-link(href="toFooter") Помощь
+                .contacts 
+                    a(href="tel:+74951864203") +7 (495) 186-42-03 
+                .apply 
+                    .apply-btn.apply-btn--footer ПОЛУЧИТЬ ДЕМО-ДОСТУП
+            .footer-row 
+                .company-info
+                    span.company-name ©2019–2021 Кукушка
+                    span.company-privacy Политика конфиденциальности
+                .developer-info Сделано в Студии Юрина
