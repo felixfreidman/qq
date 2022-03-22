@@ -332,3 +332,13 @@
         width: 200px;
     }
 }
+
+@media screen and (max-width: 330px) {
+    .section--greeting .greeting-header {
+        font-size: 22px;
+    }
+    .image-toggler__icon {
+        right: -35px;
+        transform: scale(0.5);
+    }
+}
