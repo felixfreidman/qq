@@ -238,6 +238,203 @@ a {
     }
 }
 
+// Form Section
+.dark-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000, $alpha: 0.5);
+}
+
+.form {}
+
+.apply-form {
+    max-width: 446px;
+    max-height: 686px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+    padding: 60px;
+    .form-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 22.75px;
+        height: 22.75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .cross-one,
+        .cross-two {
+            display: block;
+            background-color: #c2c2c2;
+            width: 22.75px;
+            height: 2px;
+        }
+        .cross-one {
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        .cross-two {
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+    }
+    .form-header {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 13px;
+    }
+    .form-subheader {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #5f5f5f;
+        margin-bottom: 32px;
+    }
+    label {
+        width: 100%;
+    }
+    .form-input {
+        width: calc(100% - 40px);
+        padding: 20px;
+        height: 18px;
+        background: #ffffff;
+        box-shadow: inset -1px -1px 0px #eaeaea, inset 1px 1px 0px #eaeaea;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000;
+        margin-bottom: 24px;
+        position: relative;
+        border: none;
+        outline: none;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            color: #8e8e8e;
+        }
+        &--warning {
+            box-shadow: inset -1px -1px 0px #cc0000, inset 1px 1px 0px #cc0000;
+            color: #f00;
+            &::after {
+                content: "Поле обязательно";
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 14px;
+                color: #f00;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                display: block;
+            }
+        }
+    }
+    .form-button {
+        background-color: #007bfc;
+        margin-top: 8px;
+        padding: 18px 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100%);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        border: none;
+        outline: none;
+        margin-bottom: 12px;
+    }
+    .form-caption {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        color: #8e8e8e;
+        max-width: 325px;
+    }
+}
+
+.applied-screen {
+    max-width: 446px;
+    max-height: 686px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    position: relative;
+    padding: 80px 60px 60px;
+    .form-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 22.75px;
+        height: 22.75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        .cross-one,
+        .cross-two {
+            display: block;
+            background-color: #c2c2c2;
+            width: 22.75px;
+            height: 2px;
+        }
+        .cross-one {
+            position: absolute;
+            transform: rotate(45deg);
+        }
+        .cross-two {
+            position: absolute;
+            transform: rotate(-45deg);
+        }
+    }
+    .applied-icon {
+        margin-bottom: 24px;
+        width: 115px;
+        height: 132px;
+    }
+    .applied-header {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        text-align: center;
+        color: #000000;
+    }
+    .applied-subheader {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #5f5f5f;
+        text-align: center;
+        margin-bottom: 32px;
+        a {
+            color: #007bfc;
+            font-weight: 700;
+        }
+    }
+}
+
 // Apply Button Template
 .apply-btn {
     padding: 13px 20px 11px;
@@ -274,5 +471,9 @@ a {
 
 // JS styles
 .image-toggle--hidden {
+    display: none !important;
+}
+
+.js--hidden {
     display: none !important;
 }

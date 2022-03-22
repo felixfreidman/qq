@@ -77,3 +77,34 @@ html(lang="en")
                     span.company-name ©2019–2021 Кукушка
                     span.company-privacy Политика конфиденциальности
                 .developer-info Сделано в Студии Юрина
+        .dark-layer.js--hidden
+            .form.apply-form#applyForm 
+                .form-close#closeForm
+                    span.cross-one 
+                    span.cross-two
+                .form-header Контролируйте свои объекты
+                .form-subheader Начните автоматизацию прямо сейчас. Оставьте заявку и получите бесплатный демо-доступ к Кукушке
+                label(for="userName") 
+                    input.form-input#userName(type="text", name="userName", placeholder="ФИО")
+                label(for="userPhone") 
+                    input.form-input#userPhone(type="text", name="userName" ,placeholder="Телефон")
+                label(for="userCompany") 
+                    input.form-input#userCompany(type="text", name="userName" ,placeholder="Название компании")
+                label(for="userArea") 
+                    input.form-input#userArea(type="text", name="userName" ,placeholder="Область деятельности")
+                
+                button.form-button(type="submit") Отправить
+                .form-caption Нажимая на кнопку “отправить”, вы даете согласие на обработку персональных данных
+            .applied-screen.js--hidden#appliedForm
+                .form-close#closeAppliedForm
+                    span.cross-one 
+                    span.cross-two
+                img.applied-icon(src="./assets/images/content/main_applied.png", alt="Form Applied")
+                .applied-header Заявка успешно отправлена!
+                .applied-subheader 
+                    | Мы свяжемся с вами в ближайшее время!
+                    | По всем интересующим вопросам вы можете позвонить нам по телефону 
+                    a(href="tel:+74951864203") +7 (495) 186-42-03
+                .apply-btn.apply-btn--demo#closeAppliedForm Вернуться на сайт
+        script(src="./assets/js/jquery.min.js")
+        script(src="./assets/js/main.min.js")
