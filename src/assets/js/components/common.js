@@ -1,30 +1,25 @@
+const darkLayer = document.querySelector(".dark-layer");
+const applyBtns = document.querySelectorAll(".apply-btn");
+const closeForm = document.getElementById("closeForm");
+const applyFormScreen = document.getElementById("applyForm");
+const burgerMenu = document.querySelector(".mobile-header__burger-menu");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-//   $('#btn-menu-mob').click(function(e) {
-//       e.preventDefault();
-//       $('.header__svg-mob').addClass('is-active');
+applyBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    darkLayer.classList.toggle("js--hidden");
+  });
+});
 
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//     $('body').css('overflow', 'hidden');
-//     $('.page').animate({ 
-//         right: '190px' 
-//     }, 200); 
-// });
+closeForm.addEventListener("click", () => {
+  darkLayer.classList.toggle("js--hidden");
+});
 
-// $('.menu-mobile__svg-close').click(function(e) {
-//     e.preventDefault();
-//     $('.header__svg-mob').removeClass('is-active');
-//     $('#menu-mobile').animate({ 
-//       right: '-207px' 
-//   }, 300);
-//   $('body').css('overflow', 'auto');
-//   $('.page').animate({ 
-//       right: '0px' 
-//   }, 200); 
-// });
-
- 
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("mobile-header__burger-menu--active");
+  mobileMenu.classList.toggle("mobile-menu--active");
+  document.querySelector("body").classList.toggle("disable-body");
+});
+$(document).ready(function () {
+  $("#userPhone").inputmask();
+});
