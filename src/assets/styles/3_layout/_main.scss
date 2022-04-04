@@ -253,6 +253,256 @@ a {
             }
         }
     }
+    &--process {
+        padding: 80px 375px 104px 255px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .section-container {
+            display: flex;
+            align-items: start;
+            justify-content: flex-start;
+        }
+        .section-list {
+            margin-right: 75px;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-top: 102px;
+            .list-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 33px;
+                min-width: 285px;
+                .item-counter {
+                    width: 30px;
+                    border-radius: 20px;
+                    height: 30px;
+                    background-color: rgba(242, 242, 244, 1);
+                    color: #5f5f5f;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 14px;
+                }
+                .item-value {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #5f5f5f;
+                }
+                &--active {
+                    .item-counter {
+                        color: #fff;
+                        background: #007bfc;
+                    }
+                    .item-value {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .section-menu {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: space-between;
+            .menu-item {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: space-between;
+                max-width: 930px;
+                margin-bottom: 112px;
+                &__header-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-bottom: 12px;
+                }
+                &__counter {
+                    width: 30px;
+                    border-radius: 20px;
+                    height: 30px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 14px;
+                    color: #fff;
+                    background: #007bfc;
+                }
+                &__header {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: #000000;
+                }
+                &__subheader {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #5f5f5f;
+                    margin-left: 44px;
+                    margin-bottom: 40px;
+                }
+                &__image {
+                    img {
+                        width: 100%;
+                        height: 70%;
+                    }
+                }
+            }
+        }
+    }
+    &--ability {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 80px 264px 75px 255px;
+        background: #f2f2f4;
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .ability-row {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 350px;
+                margin-bottom: 30px;
+                .ability-card {
+                    width: 370px;
+                    height: calc(100% - 72px);
+                    background-color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    margin-right: 30px;
+                    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+                    border-radius: 8px;
+                    padding: 36px 40px;
+                    .ability-image {
+                        margin-bottom: 16px;
+                    }
+                    .ability-header {
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 25px;
+                        color: #000000;
+                        margin-bottom: 12px;
+                    }
+                    .ability-description {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #5f5f5f;
+                    }
+                }
+            }
+        }
+    }
+    &--help {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 80px 255px;
+        .section-container {
+            display: flex;
+            align-items: start;
+            .faq-container {
+                width: 762px;
+                margin-top: 45px;
+                .faq-block {
+                    margin-bottom: 26px;
+                    border-bottom: 1px solid #efefef;
+                    padding-bottom: 20px;
+                    overflow: hidden;
+                    max-height: 32px;
+                    transition: max-height 0.3s ease;
+                    .question-block {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        .question-header {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: #000000;
+                            margin-right: 16px;
+                            width: calc(100% - 48px);
+                        }
+                        .question-indicator {
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            background: #f2f2f4;
+                            position: relative;
+                            &::after {
+                                content: "";
+                                display: block;
+                                width: 5.6px;
+                                height: 5.6px;
+                                border-right: 2px solid #000000;
+                                border-bottom: 2px solid #000000;
+                                border-radius: 0 0 2px 0;
+                                transform: rotate(45deg);
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                left: 0;
+                                bottom: 3px;
+                                margin: auto;
+                                transition: all 0.3s ease;
+                            }
+                            &--active {
+                                &::after {
+                                    transform: rotate(-135deg);
+                                    bottom: -5px;
+                                }
+                            }
+                        }
+                    }
+                    .answer-block {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-top: 20px;
+                        color: #5f5f5f;
+                    }
+                    &--active {
+                        max-height: 300px;
+                        transition: max-height 0.3s ease;
+                        .question-block {
+                            .question-indicator {
+                                &::after {
+                                    transform: rotate(-135deg);
+                                    bottom: -5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .faq-image {
+                width: 570px;
+                margin-left: 78px;
+                background-image: url(./assets/images/content/main_help.png);
+                background-size: cover;
+                background-position: center;
+                height: 472px;
+            }
+        }
+    }
 }
 
 // ====================================== MAIN SECTION
@@ -344,8 +594,7 @@ a {
             color: #8e8e8e;
         }
         &--warning {
-
-        border: 1px solid #cc0000;
+            border: 1px solid #cc0000;
             color: #f00;
         }
     }

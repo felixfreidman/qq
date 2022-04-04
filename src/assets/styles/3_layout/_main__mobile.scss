@@ -25,6 +25,42 @@
                 }
             }
         }
+        &--process {
+            padding: 80px 217px 80px 150px;
+            .section-menu {
+                .menu-item {
+                    max-width: 830px;
+                }
+            }
+        }
+        &--ability {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 80px 264px 75px 150px;
+            .section-container {
+                .ability-row {
+                    .ability-card {
+                        width: 300px;
+                        
+                    }
+                }
+            }
+        }
+        &--help {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 80px 150px;
+            .section-container {
+                .faq-container {
+                    width: 662px;
+                }
+                .faq-image {
+                    width: 470px;
+                }
+            }
+        }
     }
 }
 
