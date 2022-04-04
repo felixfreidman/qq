@@ -7,6 +7,7 @@ body {
     position: relative;
     background-color: #fff;
     cursor: default;
+    overflow-x: hidden;
 }
 
 a {
@@ -14,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-// Header&Footer Section
+// HEADER&FOOTER SECTION ======================================
 .header {
     position: absolute;
     top: 0;
@@ -135,7 +136,13 @@ a {
     justify-content: center;
 }
 
-// Main Section
+.mobile-header,
+.mobile-menu {
+    display: none;
+}
+
+// ====================================== END HEADER&FOOTER SECTION
+// MAIN SECTION ======================================
 .main {
     width: 100vw;
     height: fit-content;
@@ -248,7 +255,8 @@ a {
     }
 }
 
-// Form Section
+// ====================================== MAIN SECTION
+// FORM SECTION ======================================
 .dark-layer {
     position: fixed;
     top: 0;
@@ -260,8 +268,6 @@ a {
     justify-content: center;
     background-color: rgba($color: #000, $alpha: 0.5);
 }
-
-.form {}
 
 .apply-form {
     max-width: 446px;
@@ -315,13 +321,14 @@ a {
     }
     label {
         width: 100%;
+        position: relative;
     }
     .form-input {
         width: calc(100% - 40px);
         padding: 20px;
         height: 18px;
         background: #ffffff;
-        box-shadow: inset -1px -1px 0px #eaeaea, inset 1px 1px 0px #eaeaea;
+        border: 1px solid #eaeaea;
         border-radius: 8px;
         font-weight: 400;
         font-size: 14px;
@@ -329,7 +336,6 @@ a {
         color: #000;
         margin-bottom: 24px;
         position: relative;
-        border: none;
         outline: none;
         &::placeholder {
             font-weight: 400;
@@ -338,19 +344,9 @@ a {
             color: #8e8e8e;
         }
         &--warning {
-            box-shadow: inset -1px -1px 0px #cc0000, inset 1px 1px 0px #cc0000;
+
+        border: 1px solid #cc0000;
             color: #f00;
-            &::after {
-                content: "Поле обязательно";
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 14px;
-                color: #f00;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                display: block;
-            }
         }
     }
     .form-caption {
@@ -466,7 +462,8 @@ a {
     }
 }
 
-// Apply Button Template
+// ====================================== FORM SECTION
+// TEMPLATES STYLES ======================================
 .apply-btn {
     padding: 13px 20px 11px;
     border-radius: 4px;
@@ -500,7 +497,20 @@ a {
     }
 }
 
-// JS styles
+.empty--input::after {
+    content: "Поле обязательно";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    color: #f00;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    display: block;
+}
+
+// ====================================== END TEMPLATES STYLES
+// JS STYLES ======================================
 .image-toggle--hidden {
     display: none !important;
 }
@@ -508,3 +518,9 @@ a {
 .js--hidden {
     display: none !important;
 }
+
+.disable-body {
+    overflow: hidden;
+}
+
+// ====================================== JS STYLES
