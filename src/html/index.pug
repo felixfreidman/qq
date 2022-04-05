@@ -22,6 +22,27 @@ html(lang="en")
                 a(href="tel:+74951864203") +7 (495) 186-42-03 
             .apply 
                 .apply-btn#headerApply  Оставить заявку
+        .mobile-header
+            .logo-container
+                a(href="#toMain") 
+                    img.logo#toMain(src="./assets/images/content/main_logo.svg" alt="Company Logo")
+                span.logo-caption Кукушка
+            .mobile-header__burger-menu
+                span.cross-one--mobile 
+                span.cross-two--mobile
+                span.cross-left
+        .mobile-menu
+            .navigation
+                a.navigation-link(href="#toGreeting") О системе
+                a.navigation-link(href="#toProcess") Как работает
+                a.navigation-link(href="toAbilities") Возможности
+                a.navigation-link(href="#toHelp") Помощь
+        
+            .contacts
+                a(href="tel:+74951864203") +7 (495) 186-42-03
+            .apply
+                .apply-btn#headerApply Получить ДЕМО-ДОСТУП
+        
         main.main 
             .section#toGreeting.section--greeting
                 .greeting-container 
@@ -62,25 +83,25 @@ html(lang="en")
             .section#toProcess.section--process
                 .section-header Как устроенна Кукушка?
                 .section-container
-                    .section-list 
-                        .list-item.list-item--active
+                    .section-list#sectionList 
+                        .list-item#firstListPoint
                             .item-counter 1
                             .item-value Профиль сотрудника
-                        .list-item
+                        .list-item#secondListPoint
                             .item-counter 2
                             .item-value Заступление на объект
-                        .list-item
+                        .list-item#thirdListPoint
                             .item-counter 3
                             .item-value Авторизация на объекте
-                        .list-item
+                        .list-item#fourthListPoint
                             .item-counter 4
                             .item-value Проверка во время смены
-                        .list-item
+                        .list-item#fifthListPoint
                             .item-counter 5
                             .item-value Мониторинг объекта
-                    .section-menu 
+                    .section-menu#sectionMenu 
                         .menu-item 
-                            .menu-item__header-container
+                            .menu-item__header-container#firstMenuPoint
                                 .menu-item__counter 1
                                 .menu-item__header Профиль сотрудника
                             .menu-item__subheader Каждый сотрудник имеет личный ID для идентификации в Системе
@@ -88,28 +109,28 @@ html(lang="en")
                                     img(src="./assets/images/content/main__menu1.png", alt="")
 
                         .menu-item 
-                            .menu-item__header-container
+                            .menu-item__header-container#secondMenuPoint
                                 .menu-item__counter 2
                                 .menu-item__header Заступление на объект
                             .menu-item__subheader Сотрудник приходит на объект для начала рабочей смены 
                             .menu-item__image
                                     img(src="./assets/images/content/main__menu2.png", alt="")
                         .menu-item 
-                            .menu-item__header-container
+                            .menu-item__header-container#thirdMenuPoint
                                 .menu-item__counter 3
                                 .menu-item__header Авторизация на объекте
                             .menu-item__subheader Сотрудник звонит на единый номер Кукушки с номера телефона объекта и вводит свой ID для заступления на смену
                             .menu-item__image
                                     img(src="./assets/images/content/main__menu3.png", alt="")
                         .menu-item 
-                            .menu-item__header-container
+                            .menu-item__header-container#fourthMenuPoint
                                 .menu-item__counter 4
                                 .menu-item__header Проверка во время смены
                             .menu-item__subheader Во время смены сотрудника Кукушка периодически звонит на номер телефона объекта и проверяет сотрудника: задает ему различные вопросы, записывает голос, ведет диалог. Все данные записываются в Системе
                             .menu-item__image
                                     img(src="./assets/images/content/main__menu4.png", alt="")
                         .menu-item 
-                            .menu-item__header-container
+                            .menu-item__header-container#fifthMenuPoint
                                 .menu-item__counter 5
                                 .menu-item__header Мониторинг объекта
                             .menu-item__subheader Менеджеры видят состояние объектов и знают, как работают сотрудники и не дергают их. По окончании смены сотрудник звонит на единый номер с номера телефона объекта и вводит свой ID
@@ -155,7 +176,7 @@ html(lang="en")
                 .section-header Часто задаваемые вопросы
                 .section-container 
                     .faq-container 
-                        .faq-block.faq-block--active
+                        .faq-block
                             .question-block
                                 .question-header Какие преимущества даёт Яндекс Плюс?
                                 .question-indicator
@@ -234,4 +255,5 @@ html(lang="en")
                     a(href="tel:+74951864203") +7 (495) 186-42-03
                 .form-button.form-button--form#closeAppliedFormButton Вернуться на сайт
         script(src="./assets/js/jquery.min.js")
+        script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js")

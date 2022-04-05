@@ -42,7 +42,6 @@
                 .ability-row {
                     .ability-card {
                         width: 300px;
-                        
                     }
                 }
             }
@@ -91,6 +90,36 @@
                 }
             }
         }
+        &--process {
+            padding: 80px 217px 80px 150px;
+            .section-menu {
+                .menu-item {
+                    max-width: 750px;
+                }
+            }
+        }
+        &--ability {
+            .section-container {
+                .ability-row {
+                    .ability-card {
+                        width: 270px;
+                        .ability-image {}
+                        .ability-header {}
+                        .ability-description {}
+                    }
+                }
+            }
+        }
+        &--help {
+            .section-container {
+                .faq-container {
+                    width: 602px;
+                }
+                .faq-image {
+                    width: 440px;
+                }
+            }
+        }
     }
 }
 
@@ -121,6 +150,53 @@
                 }
             }
         }
+        &--process {
+            padding: 80px 217px 80px 40px;
+            .section-menu {
+                .menu-item {
+                    max-width: 750px;
+                }
+            }
+        }
+        &--ability {
+            padding: 80px 217px 80px 40px;
+            .section-container {
+                .ability-row {
+                    height: 350px;
+                    .ability-card {
+                        width: 280px;
+                        .ability-image {
+                            width: fit-content;
+                            height: fit-content;
+                            display: flex;
+                            margin-bottom: 0;
+                            img {
+                                width: 90%;
+                                height: 90%;
+                                object-fit: contain;
+                            }
+                        }
+                        .ability-header {
+                            font-size: 18px;
+                        }
+                        .ability-description {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &--help {
+            padding: 80px 217px 80px 40px;
+            .section-container {
+                .faq-container {
+                    width: 602px;
+                }
+                .faq-image {
+                    width: 440px;
+                }
+            }
+        }
     }
     .navigation {
         margin-right: 0;
@@ -128,6 +204,61 @@
         .navigation-link {
             font-size: 14px;
             margin-right: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .section {
+        &--process {
+            padding: 80px 217px 80px 40px;
+            .section-menu {
+                .menu-item {
+                    max-width: 620px;
+                }
+            }
+        }
+        &--ability {
+            padding: 80px 217px 80px 40px;
+            .section-container {
+                .ability-row {
+                    height: 350px;
+                    margin-bottom: 20px;
+                    .ability-card {
+                        width: 260px;
+                        padding: 28px 20px;
+                        .ability-image {
+                            width: fit-content;
+                            height: fit-content;
+                            display: flex;
+                            margin-bottom: 0;
+                            img {
+                                width: 90%;
+                                height: 90%;
+                                object-fit: contain;
+                            }
+                        }
+                        .ability-header {
+                            font-size: 18px;
+                        }
+                        .ability-description {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &--help {
+            padding: 80px 217px 80px 40px;
+            .section-container {
+                .faq-container {
+                    width: 550px;
+                }
+                .faq-image {
+                    width: 440px;
+                    margin-left: 40px;
+                }
+            }
         }
     }
 }
