@@ -1,5 +1,6 @@
 const darkLayer = document.querySelector(".dark-layer");
 const applyBtns = document.querySelectorAll(".apply-btn");
+const applyImage = document.querySelectorAll(".apply-image");
 const closeForm = document.getElementById("closeForm");
 const applyFormScreen = document.getElementById("applyForm");
 const burgerMenu = document.querySelector(".mobile-header__burger-menu");
@@ -8,6 +9,11 @@ const allFAQs = document.querySelectorAll(".faq-block");
 
 applyBtns.forEach((button) => {
   button.addEventListener("click", () => {
+    darkLayer.classList.toggle("js--hidden");
+  });
+});
+applyImage.forEach((image) => {
+  image.addEventListener("click", () => {
     darkLayer.classList.toggle("js--hidden");
   });
 });
@@ -79,12 +85,6 @@ function unStickTheMenu() {
 }
 
 function activateTheListPoints() {
-  console.log(firstMenuPointOffset + " First");
-  console.log(secondMenuPointOffset + " Second");
-  console.log(thirdMenuPointOffset + " Third");
-  console.log(fourthMenuPointOffset + " Fourth");
-  console.log(fifthMenuPointOffset + " Fifth");
-  console.log(window.pageYOffset + " Page");
   if (window.pageYOffset >= firstMenuPointOffset - 100) {
     firstListPoint.classList.add("list-item--active");
   } else if (window.pageYOffset <= fourthMenuPointOffset) {
