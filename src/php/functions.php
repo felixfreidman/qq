@@ -20,7 +20,7 @@ if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
         'page_title' => 'Основные настройки',
-        'menu_title' => 'Настройки темы',
+        'menu_title' => 'Настройки сайта',
         'menu_slug' => 'theme-general-settings',
         'capability' => 'edit_posts',
         'redirect' => false,
@@ -71,7 +71,7 @@ function ajax_form()
     $mail_to = get_field("email_to", 'option');
 
     $headers = "Content-Type: text/html; charset=utf-8\n";
-    $headers .= 'From: QQ: Test Task' . "\r\n";
+    $headers .= 'От: Кукушки.Посадка' . "\r\n";
 
 // Отправляем почтовое сообщение
 
@@ -79,7 +79,7 @@ function ajax_form()
         $response = '<div class="applied-screen" id="appliedForm">
 <div class="form-close" id="closeAppliedForm"><span class="cross-one"> </span><span class="cross-two"></span>
 </div><img class="applied-icon"
-    src="http://qq.bezrealtora.ru/wp-content/themes/qq_test/assets/images/content/main_applied.png"
+    src="http://qq.bezrealtora.ru/wp-content/themes/qq/assets/images/content/main_applied.png"
 alt="Form Applied">
 <div class="applied-header">Заявка успешно отправлена!</div>
 <div class="applied-subheader"> Мы свяжемся с вами в ближайшее время!

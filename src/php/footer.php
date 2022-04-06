@@ -1,12 +1,19 @@
 <footer class="footer" id="toFooter">
     <div class="footer-row footer-row--expanded">
-        <div class="logo-container"><a href="#toMain"> <img class="logo" id="toMain"
+        <div class="logo-container">
+            <a href="#toMain">
+                <img class="logo" id="toMain"
                     src="<?php echo get_template_directory_uri() . '/assets/images/content/main_logo.svg' ?>"
-                    alt="Company Logo"></a><span class="logo-caption">Кукушка</span></div>
+                    alt="Company Logo">
+            </a>
+            <span class="logo-caption">Кукушка</span>
+        </div>
         <div class="mobile-container mobile-container--second-to-column">
-            <div class="navigation"><a class="navigation-link" href="#toGreeting">О системе</a><a
-                    class="navigation-link" href="#toBenefits">Как работает</a><a class="navigation-link"
-                    href="">Возможности</a><a class="navigation-link" href="#toFooter">Помощь</a></div>
+            <div class="navigation"><a class="navigation-link" href="<?php echo home_url() . '#toBenefits' ?>">О
+                    системе</a><a class="navigation-link" href="<?php echo home_url() . '#toProcess' ?>">Как
+                    работает</a><a class="navigation-link"
+                    href="<?php echo home_url() . '#toAbilities ' ?>">Возможности</a><a class="navigation-link"
+                    href="<?php echo home_url() . '#toHelp' ?>">Помощь</a></div>
             <div class="mobile-container mobile-container--first-to-column">
                 <div class="contacts"> <a
                         href="tel:<?php echo get_field("phone_num", 'option'); ?>"><?php echo get_field("phone_num", 'option'); ?></a>
@@ -18,9 +25,11 @@
         </div>
     </div>
     <div class="footer-row">
-        <div class="company-info"><span class="company-name">©2019–2021 Кукушка</span><span
-                class="company-privacy">Политика конфиденциальности</span></div>
-        <div class="developer-info">Сделано в Студии Юрина</div>
+        <div class="company-info">
+            <span class="company-name">©2019–2022 Кукушка</span>
+            <a class="company-privacy" href="/privacy/" target="_blank">Политика конфиденциальности</a>
+        </div>
+        <a href="https://yurin.biz/" target="_blank" class="developer-info">Сделано в Студии Юрина</a>
     </div>
 </footer>
 

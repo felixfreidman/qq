@@ -13,12 +13,13 @@
 
 <body>
     <header class="header">
-        <div class="logo-container"><a href="#toMain"> <img class="logo" id="toMain"
+        <div class="logo-container"><a href="<?php echo home_url(); ?>"> <img class="logo" id="toMain"
                     src="<?php echo get_template_directory_uri() . '/assets/images/content/main_logo.svg' ?>"
                     alt="Company Logo"></a><span class="logo-caption">Кукушка</span></div>
-        <div class="navigation"><a class="navigation-link" href="#toGreeting">О системе</a><a class="navigation-link"
-                href="#toBenefits">Как работает</a><a class="navigation-link" href="">Возможности</a><a
-                class="navigation-link" href="#toFooter">Помощь</a></div>
+        <div class="navigation"><a class="navigation-link" href="<?php echo home_url() . '#toBenefits' ?>">О
+                системе</a><a class="navigation-link" href="<?php echo home_url() . '#toProcess' ?>">Как работает</a><a
+                class="navigation-link" href="<?php echo home_url() . '#toAbilities' ?>">Возможности</a><a
+                class="navigation-link" href="<?php echo home_url() . '#toHelp' ?>">Помощь</a></div>
         <div class="contacts">
             <a href="tel:<?php echo get_field("phone_num", 'option'); ?>">
                 <?php echo get_field("phone_num", 'option'); ?></a>
@@ -28,7 +29,7 @@
         </div>
     </header>
     <div class="mobile-header">
-        <div class="logo-container"><a href="#toMain"> <img class="logo" id="toMain"
+        <div class="logo-container"><a href="<?php echo home_url(); ?>"> <img class="logo" id="toMain"
                     src="<?php echo get_template_directory_uri() . '/assets/images/content/main_logo.svg' ?>"
                     alt="Company Logo"></a><span class="logo-caption">Кукушка</span></div>
         <div class="mobile-header__burger-menu ">
@@ -37,11 +38,11 @@
         </div>
     </div>
     <div class="mobile-menu">
-        <div class="navigation">
-            <a class="navigation-link" href="#toGreeting">О системе</a>
-            <a class="navigation-link" href="#toBenefits">Как работает</a>
-            <a class="navigation-link" href="">Возможности</a>
-            <a class="navigation-link" href="#toFooter">Помощь</a>
+        <div class="navigation" id="mobileNavigation">
+            <a class="navigation-link" href="<?php echo home_url() . '#toBenefits' ?>">О системе</a>
+            <a class="navigation-link" href="<?php echo home_url() . '#toProcess' ?>">Как работает</a>
+            <a class="navigation-link" href="<?php echo home_url() . '#toAbilities' ?>">Возможности</a>
+            <a class="navigation-link" href="<?php echo home_url() . '#toHelp' ?>">Помощь</a>
         </div>
         <div class="contacts">
             <a
