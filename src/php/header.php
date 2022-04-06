@@ -19,7 +19,10 @@
         <div class="navigation"><a class="navigation-link" href="#toGreeting">О системе</a><a class="navigation-link"
                 href="#toBenefits">Как работает</a><a class="navigation-link" href="">Возможности</a><a
                 class="navigation-link" href="#toFooter">Помощь</a></div>
-        <div class="contacts"> <a href="tel:+74951864203">+7 (495) 186-42-03 </a></div>
+        <div class="contacts">
+            <a href="tel:<?php echo get_field("phone_num", 'option'); ?>">
+                <?php echo get_field("phone_num", 'option'); ?></a>
+        </div>
         <div class="apply">
             <div class="apply-btn" id="headerApply"> Оставить заявку</div>
         </div>
@@ -41,7 +44,8 @@
             <a class="navigation-link" href="#toFooter">Помощь</a>
         </div>
         <div class="contacts">
-            <a href="tel:+74951864203">+7 (495) 186-42-03 </a>
+            <a
+                href="tel:<?php echo get_field("phone_num", 'option'); ?>"><?php echo get_field("phone_num", 'option'); ?></a>
         </div>
         <div class="apply">
             <div class="apply-btn" id="headerApply">Получить ДЕМО-ДОСТУП</div>

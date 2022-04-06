@@ -15,13 +15,34 @@ html(lang="en")
                 span.logo-caption Кукушка
             .navigation
                 a.navigation-link(href="#toGreeting") О системе
-                a.navigation-link(href="#toBenefits") Как работает
-                a.navigation-link(href="") Возможности
-                a.navigation-link(href="toFooter") Помощь
+                a.navigation-link(href="#toProcess") Как работает
+                a.navigation-link(href="#toAbilities") Возможности
+                a.navigation-link(href="#toHelp") Помощь
             .contacts 
                 a(href="tel:+74951864203") +7 (495) 186-42-03 
             .apply 
                 .apply-btn#headerApply  Оставить заявку
+        .mobile-header
+            .logo-container
+                a(href="#toMain") 
+                    img.logo#toMain(src="./assets/images/content/main_logo.svg" alt="Company Logo")
+                span.logo-caption Кукушка
+            .mobile-header__burger-menu
+                span.cross-one--mobile 
+                span.cross-two--mobile
+                span.cross-left
+        .mobile-menu
+            .navigation
+                a.navigation-link(href="#toGreeting") О системе
+                a.navigation-link(href="#toProcess") Как работает
+                a.navigation-link(href="toAbilities") Возможности
+                a.navigation-link(href="#toHelp") Помощь
+        
+            .contacts
+                a(href="tel:+74951864203") +7 (495) 186-42-03
+            .apply
+                .apply-btn#headerApply Получить ДЕМО-ДОСТУП
+        
         main.main 
             .section#toGreeting.section--greeting
                 .greeting-container 
@@ -59,6 +80,129 @@ html(lang="en")
                             img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
                         .image--toggle3.image-toggle--hidden
                             img(src="./assets/images/content/main_screens.png", alt="Toggle 3")
+            .section#toProcess.section--process
+                .section-header Как устроенна Кукушка?
+                .section-container
+                    .section-list#sectionList 
+                        .list-item#firstListPoint
+                            .item-counter 1
+                            .item-value Профиль сотрудника
+                        .list-item#secondListPoint
+                            .item-counter 2
+                            .item-value Заступление на объект
+                        .list-item#thirdListPoint
+                            .item-counter 3
+                            .item-value Авторизация на объекте
+                        .list-item#fourthListPoint
+                            .item-counter 4
+                            .item-value Проверка во время смены
+                        .list-item#fifthListPoint
+                            .item-counter 5
+                            .item-value Мониторинг объекта
+                    .section-menu#sectionMenu 
+                        .menu-item 
+                            .menu-item__header-container#firstMenuPoint
+                                .menu-item__counter 1
+                                .menu-item__header Профиль сотрудника
+                            .menu-item__subheader Каждый сотрудник имеет личный ID для идентификации в Системе
+                            .menu-item__image
+                                    img(src="./assets/images/content/main__menu1.png", alt="")
+
+                        .menu-item 
+                            .menu-item__header-container#secondMenuPoint
+                                .menu-item__counter 2
+                                .menu-item__header Заступление на объект
+                            .menu-item__subheader Сотрудник приходит на объект для начала рабочей смены 
+                            .menu-item__image
+                                    img(src="./assets/images/content/main__menu2.png", alt="")
+                        .menu-item 
+                            .menu-item__header-container#thirdMenuPoint
+                                .menu-item__counter 3
+                                .menu-item__header Авторизация на объекте
+                            .menu-item__subheader Сотрудник звонит на единый номер Кукушки с номера телефона объекта и вводит свой ID для заступления на смену
+                            .menu-item__image
+                                    img(src="./assets/images/content/main__menu3.png", alt="")
+                        .menu-item 
+                            .menu-item__header-container#fourthMenuPoint
+                                .menu-item__counter 4
+                                .menu-item__header Проверка во время смены
+                            .menu-item__subheader Во время смены сотрудника Кукушка периодически звонит на номер телефона объекта и проверяет сотрудника: задает ему различные вопросы, записывает голос, ведет диалог. Все данные записываются в Системе
+                            .menu-item__image
+                                    img(src="./assets/images/content/main__menu4.png", alt="")
+                        .menu-item 
+                            .menu-item__header-container#fifthMenuPoint
+                                .menu-item__counter 5
+                                .menu-item__header Мониторинг объекта
+                            .menu-item__subheader Менеджеры видят состояние объектов и знают, как работают сотрудники и не дергают их. По окончании смены сотрудник звонит на единый номер с номера телефона объекта и вводит свой ID
+                            .menu-item__image
+                                    img(src="./assets/images/content/main__menu5.png", alt="")
+            .section#toAbilities.section--ability
+                .section-header Что умеет Кукушка?
+                .section-container 
+                    .ability-row 
+                        .ability-card 
+                            .ability-image
+                                img(src="./assets/images/content/main_ability1.svg", alt="") 
+                            .ability-header Контроль присутствия сотрудников на объекте
+                            .ability-description Система проверяет охранников с помощью звонков и сверяет введенный ID
+
+                        .ability-card 
+                            .ability-image
+                                    img(src="./assets/images/content/main_ability2.svg", alt="") 
+                            .ability-header Расчет заработной платы сотрудников
+                            .ability-description В Систему загружаются почасовые ставки объектов, производится расчет рабочих часов сотрудников и  высчитывается зарплата сотрудников
+                        .ability-card 
+                            .ability-image
+                                img(src="./assets/images/content/main_ability3.svg", alt="") 
+                            .ability-header Моментально оповещает руководство о происшествии
+                            .ability-description При экстренных ситуациях (нет ответа на звонок / введен SOS-код / неявка на объект и др.) менеджеры Системы получают оповещения для оперативного решения
+                    .ability-row 
+                        .ability-card 
+                            .ability-image
+                                img(src="./assets/images/content/main_ability4.svg", alt="") 
+                            .ability-header Рейтинг сотрудников
+                            .ability-description Для каждого сотрудника Система рассчитывает рейтинг в соответствии с качеством выполнения работ. Распределение премий привязывается к рейтингу сотрудников
+                        .ability-card 
+                            .ability-image
+                                img(src="./assets/images/content/main_ability5.svg", alt="") 
+                            .ability-header Система штрафов
+                            .ability-description Для каждого сотрудника Система определяет время опозданий, прогулы, непройденные проверки и вычитает сумму штрафов из зарплаты сотрудников
+                        .ability-card 
+                            .ability-image
+                                img(src="./assets/images/content/main_ability6.svg", alt="") 
+                            .ability-header Ежедневный отчет руководству
+                            .ability-description Система формирует ежедневный отчет о состоянии объектов и отправляет его на почту высшему руководству
+            .section#toHelp.section--help
+                .section-header Часто задаваемые вопросы
+                .section-container 
+                    .faq-container 
+                        .faq-block
+                            .question-block
+                                .question-header Какие преимущества даёт Яндекс Плюс?
+                                .question-indicator
+                            .answer-block В договоре мы указываем телефон и адрес электронной почты поддержки. Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.
+                        .faq-block
+                            .question-block
+                                .question-header Можно ли попробовать подписку, не привязывая банковскую карту?
+                                .question-indicator
+                            .answer-block В договоре мы указываем телефон и адрес электронной почты поддержки. Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.
+                        .faq-block
+                            .question-block
+                                .question-header Смогу ли я получить помощь даже через несколько месяцев, если что-то не будет работать?
+                                .question-indicator
+                            .answer-block В договоре мы указываем телефон и адрес электронной почты поддержки. Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.
+                        .faq-block
+                            .question-block
+                                .question-header Как получить поддержку после подключения к системе?
+                                .question-indicator
+                            .answer-block В договоре мы указываем телефон и адрес электронной почты поддержки. Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.
+                        .faq-block
+                            .question-block
+                                .question-header Что входит в стоимость внедрения?
+                                .question-indicator
+                            .answer-block В договоре мы указываем телефон и адрес электронной почты поддержки. Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.
+                    
+                    .faq-image.apply-image
         footer.footer#toFooter 
             .footer-row.footer-row--expanded 
                 .logo-container
@@ -111,4 +255,5 @@ html(lang="en")
                     a(href="tel:+74951864203") +7 (495) 186-42-03
                 .form-button.form-button--form#closeAppliedFormButton Вернуться на сайт
         script(src="./assets/js/jquery.min.js")
+        script(src="./assets/js/plugins.min.js")
         script(src="./assets/js/main.min.js")
