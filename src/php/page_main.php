@@ -21,17 +21,17 @@ if (have_rows('card_repeater')):
     while (have_rows('card_repeater')): the_row();
         ?>
 
-                <div
-                    class="image-toggler<?php if (get_sub_field('card_active') == 'yes') {echo ' image-toggler--active';}?>">
-                    <div class="image-toggler__container">
-                        <div class="image-header"><?php the_sub_field('card_header');?></div>
-                        <div class="image-content"><?php the_sub_field('card_content');?></div>
-                    </div>
-                    <div class="image-toggler__icon"> <img class="image-icon"
-                            src="<?php the_sub_field('card_image');?>">
-                    </div>
-                </div>
-                <?php
+		                <div
+		                    class="image-toggler<?php if (get_sub_field('card_active') == 'yes') {echo ' image-toggler--active';}?>">
+		                    <div class="image-toggler__container">
+		                        <div class="image-header"><?php the_sub_field('card_header');?></div>
+		                        <div class="image-content"><?php the_sub_field('card_content');?></div>
+		                    </div>
+		                    <div class="image-toggler__icon"> <img class="image-icon"
+		                            src="<?php the_sub_field('card_image');?>">
+		                    </div>
+		                </div>
+		                <?php
     endwhile;
 endif;
 ?>
@@ -231,7 +231,12 @@ endif;
                         Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.</div>
                 </div>
             </div>
-            <div class="faq-image apply-image"></div>
+            <div class="faq-image apply-image">
+                <div class="faq-image__header">Контролируйте свои объекты</div>
+                <div class="faq-image__subheader">Начните автоматизацию прямо сейчас. Оставьте заявку и получите
+                    бесплатный демо-доступ к Кукушке</div>
+                <div class="apply-btn apply-btn--faq">ПОЛУЧИТЬ ДЕМО-ДОСТУП</div>
+            </div>
         </div>
     </div>
 </main>

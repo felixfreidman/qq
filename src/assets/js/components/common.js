@@ -1,6 +1,5 @@
 const darkLayer = document.querySelector(".dark-layer");
 const applyBtns = document.querySelectorAll(".apply-btn");
-const applyImage = document.querySelectorAll(".apply-image");
 const closeForm = document.getElementById("closeForm");
 const applyFormScreen = document.getElementById("applyForm");
 const burgerMenu = document.querySelector(".mobile-header__burger-menu");
@@ -9,11 +8,6 @@ const allFAQs = document.querySelectorAll(".faq-block");
 
 applyBtns.forEach((button) => {
   button.addEventListener("click", () => {
-    darkLayer.classList.toggle("js--hidden");
-  });
-});
-applyImage.forEach((image) => {
-  image.addEventListener("click", () => {
     darkLayer.classList.toggle("js--hidden");
   });
 });
