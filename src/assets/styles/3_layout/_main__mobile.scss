@@ -358,15 +358,17 @@
     }
     .mobile-header {
         display: flex;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
+        background-color: #212121;
+        z-index: 1000;
         width: calc(95vw);
         height: 39px;
-        padding: 23px 0;
+        padding: 23px 2.5vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -412,9 +414,10 @@
         }
     }
     .mobile-menu {
-        position: absolute;
-        top: 87px;
+        position: fixed;
+        top: 86px;
         left: 0;
+        z-index: 1000;
         display: none;
         flex-direction: column;
         align-items: start;
@@ -759,6 +762,14 @@
             align-items: start;
             padding: 80px 255px;
             .section-container {
+                .faq-container .faq-block .answer-block {
+                    margin-top: 50px;
+                    transition: all 0.3s ease;
+                }
+                .faq-container .faq-block--active .answer-block {
+                    margin-top: 20px;
+                    transition: all 0.3s ease;
+                }
                 .faq-image {
                     max-width: 329px;
                     padding: 24px;

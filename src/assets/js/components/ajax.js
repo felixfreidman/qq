@@ -41,7 +41,7 @@ function closeAppliedForm() {
     darkLayer.classList.toggle("js--hidden");
   });
 }
-// Сама функция проверки полей и добавления дополнительных свойств пол/
+// Сама функция проверки полей и добавления дополнительных свойств полю
 function inputAuthorization() {
   const inputsArray = document.querySelectorAll(".form-input");
   inputsArray.forEach((input) => {

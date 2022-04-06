@@ -21,17 +21,17 @@ if (have_rows('card_repeater')):
     while (have_rows('card_repeater')): the_row();
         ?>
 
-		                <div
-		                    class="image-toggler<?php if (get_sub_field('card_active') == 'yes') {echo ' image-toggler--active';}?>">
-		                    <div class="image-toggler__container">
-		                        <div class="image-header"><?php the_sub_field('card_header');?></div>
-		                        <div class="image-content"><?php the_sub_field('card_content');?></div>
-		                    </div>
-		                    <div class="image-toggler__icon"> <img class="image-icon"
-		                            src="<?php the_sub_field('card_image');?>">
-		                    </div>
-		                </div>
-		                <?php
+                <div
+                    class="image-toggler<?php if (get_sub_field('card_active') == 'yes') {echo ' image-toggler--active';}?>">
+                    <div class="image-toggler__container">
+                        <div class="image-header"><?php the_sub_field('card_header');?></div>
+                        <div class="image-content"><?php the_sub_field('card_content');?></div>
+                    </div>
+                    <div class="image-toggler__icon"> <img class="image-icon"
+                            src="<?php the_sub_field('card_image');?>">
+                    </div>
+                </div>
+                <?php
     endwhile;
 endif;
 ?>
@@ -188,48 +188,27 @@ endif;
         <div class="section-header">Часто задаваемые вопросы</div>
         <div class="section-container">
             <div class="faq-container">
+
+                <?php
+if (have_rows('faq_repeater')):
+
+    while (have_rows('faq_repeater')): the_row();?>
+
+                <?php
+        $faq_question = get_sub_field('faq_question');
+        $faq_answer = get_sub_field('faq_answer');
+        ?>
                 <div class="faq-block">
                     <div class="question-block">
-                        <div class="question-header">Какие преимущества даёт Яндекс Плюс?</div>
+                        <div class="question-header"><?=$faq_question?></div>
                         <div class="question-indicator"></div>
                     </div>
-                    <div class="answer-block">В договоре мы указываем телефон и адрес электронной почты поддержки.
-                        Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.</div>
+                    <div class="answer-block"><?=$faq_answer?></div>
                 </div>
-                <div class="faq-block">
-                    <div class="question-block">
-                        <div class="question-header">Можно ли попробовать подписку, не привязывая банковскую карту?
-                        </div>
-                        <div class="question-indicator"></div>
-                    </div>
-                    <div class="answer-block">В договоре мы указываем телефон и адрес электронной почты поддержки.
-                        Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.</div>
-                </div>
-                <div class="faq-block">
-                    <div class="question-block">
-                        <div class="question-header">Смогу ли я получить помощь даже через несколько месяцев, если
-                            что-то не будет работать?</div>
-                        <div class="question-indicator"></div>
-                    </div>
-                    <div class="answer-block">В договоре мы указываем телефон и адрес электронной почты поддержки.
-                        Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.</div>
-                </div>
-                <div class="faq-block">
-                    <div class="question-block">
-                        <div class="question-header">Как получить поддержку после подключения к системе?</div>
-                        <div class="question-indicator"></div>
-                    </div>
-                    <div class="answer-block">В договоре мы указываем телефон и адрес электронной почты поддержки.
-                        Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.</div>
-                </div>
-                <div class="faq-block">
-                    <div class="question-block">
-                        <div class="question-header">Что входит в стоимость внедрения?</div>
-                        <div class="question-indicator"></div>
-                    </div>
-                    <div class="answer-block">В договоре мы указываем телефон и адрес электронной почты поддержки.
-                        Получить консультацию по ним можно в любой день с 9:00 до 18:00 по московскому времени.</div>
-                </div>
+                <?php
+    endwhile;
+endif;
+?>
             </div>
             <div class="faq-image apply-image">
                 <div class="faq-image__header">Контролируйте свои объекты</div>

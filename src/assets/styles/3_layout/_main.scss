@@ -31,6 +31,13 @@ a {
     align-items: center;
     justify-content: flex-start;
     border-bottom: #363636 1px solid;
+    &--dark {
+        width: calc(100% - 5vw) !important;
+        max-width: 95vw !important;
+        background-color: #212021;
+        padding-right: 2.5vw !important;
+        padding-left: 2.5vw !important;
+    }
 }
 
 .footer {
@@ -74,6 +81,16 @@ a {
             display: block;
             margin-right: 44px;
             transition: all 0.3s ease;
+            &:hover {
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        a {
+            display: block;
+            margin-right: 44px;
+            transition: all 0.3s ease;
+            color: #5f5f5f;
             &:hover {
                 color: #fff;
                 cursor: pointer;
@@ -543,6 +560,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
+    z-index: 1001;
     display: flex;
     align-items: center;
     justify-content: center;
