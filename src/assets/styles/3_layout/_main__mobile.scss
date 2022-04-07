@@ -282,12 +282,40 @@
             margin-bottom: 16px;
         }
     }
+    .logo-container {
+        .logo {
+            &:hover {
+                transform: scale(1);
+            }
+        }
+    }
     .section {
         &--process {
             padding: 80px 217px 80px 40px;
             .section-menu {
                 .menu-item {
                     max-width: 520px;
+                    &__image {
+                        img {
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &--benefits {
+            .image-pagination {
+                .image-toggler {
+                    &:hover {
+                        transform: scale(1);
+                    }
+                }
+            }
+            .image-presentation {
+                &:hover {
+                    transform: scale(1);
                 }
             }
         }
@@ -309,6 +337,9 @@
                                 width: 90%;
                                 height: 90%;
                                 object-fit: contain;
+                            }
+                            &:hover {
+                                transform: scale(1);
                             }
                         }
                         .ability-header {
