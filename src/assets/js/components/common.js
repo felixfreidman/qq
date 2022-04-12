@@ -127,6 +127,11 @@ if (!windowLocation.includes("privacy")) {
       point.classList.remove("list-item--active");
     });
   }
+  window.onclick = function (event) {
+    if (event.target == darkLayer) {
+      darkLayer.classList.toggle("js--hidden");
+    }
+  };
 } else {
   // Поменять стили header, если на белой странице "Конфиденциальность"
   const darkLayer = document.querySelector(".dark-layer");

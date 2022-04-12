@@ -30,6 +30,7 @@ $(".form-button").on("click", function () {
 });
 // Так как окно после отправки я генерирую сам, мне нужно его закрывать, поэтому функция вызывается, когда только появляется окно
 function closeAppliedForm() {
+  const darkLayer = document.querySelector(".dark-layer");
   const closeAppliedForm = document.getElementById("closeAppliedForm");
   const closeAppliedFormButton = document.getElementById(
     "closeAppliedFormButton"

@@ -1,13 +1,13 @@
 {
 	"build": {
-	    "php": "wp/wp-content/themes/qq/",
-	    "html": "wp/wp-content/themes/qq/html/",
-	    "js": "wp/wp-content/themes/qq/assets/js/",
-		"css": "wp/wp-content/themes/qq/",
+	    "php": "wp/wp-content/themes/имя_вашей_темы/",
+	    "html": "wp/wp-content/themes/имя_вашей_темы/html/",
+	    "js": "wp/wp-content/themes/имя_вашей_темы/assets/js/",
+		"css": "wp/wp-content/themes/имя_вашей_темы/",
 		"imgBase": "src/assets/images/",
-	    "img": "wp/wp-content/themes/qq/assets/images/",
-	    "fonts": "wp/wp-content/themes/qq/assets/fonts/",
-	    "sprites": "wp/wp-content/themes/qq/assets/sprites/"
+	    "img": "wp/wp-content/themes/имя_вашей_темы/assets/images/",
+	    "fonts": "wp/wp-content/themes/имя_вашей_темы/assets/fonts/",
+	    "sprites": "wp/wp-content/themes/имя_вашей_темы/assets/sprites/"
 	},
 	"src": {
 	    "php": "src/php/**/*.php",
@@ -49,16 +49,16 @@
 	    },
 	    "fonts": "src/assets/fonts/**/*.*"
 	},
-	"clean": "./wp/wp-content/themes/qq",
+	"clean": "./wp/wp-content/themes/имя_вашей_темы",
 	"server": {
 		"server": {
-	        "baseDir": "./wp/wp-content/themes/qq"
+	        "baseDir": "./wp/wp-content/themes/имя_вашей_темы"
 		},
 	    "notify": false,
 	    "open": true,
 	    "cors": true,
 	    "ui": false,
 	    "host": "localhost",
-	    "port": 8888
+	    "port": 3000
 	}
 }
